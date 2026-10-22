@@ -1,0 +1,29 @@
+name: CityfloExplorer
+options:
+  bundleIdPrefix: com.brahmjot
+  deploymentTarget:
+    iOS: "17.0"
+  xcodeVersion: "16.0"
+
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    SWIFT_STRICT_CONCURRENCY: complete
+    IPHONEOS_DEPLOYMENT_TARGET: "17.0"
+
+targets:
+  CityfloExplorer:
+    type: application
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - path: CityfloExplorer/Sources/CityfloExplorer
+        excludes: []
+    resources:
+      - CityfloExplorer/Sources/CityfloExplorer/Resources/routes.json
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.brahmjot.CityfloExplorer
+        SWIFT_VERSION: "6.0"
+        SWIFT_STRICT_CONCURRENCY: complete
+        INFOPLIST_FILE: CityfloExplorer/Sources/CityfloExplorer/Resources/Info.plist
